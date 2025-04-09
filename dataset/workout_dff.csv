@@ -1,0 +1,408 @@
+,Unnamed: 0,disease,workout
+0,0,Fungal infection,Practice daily light walking.
+1,1,Fungal infection,Stretching exercises to improve circulation
+2,2,Fungal infection,Strength training with lightweight to boost immune response
+3,3,Fungal infection,Yoga for relaxation and stress reduction.
+4,4,Fungal infection,Breathing exercises for mental wellness.
+5,5,Fungal infection,Pilates
+6,6,Fungal infection,Kegel Exercises
+7,7,Fungal infection,Bodyweight Squats
+8,8,Fungal infection,Arm Circles
+9,9,Fungal infection,Leg Raises
+10,10,Allergy,Light Aerobics: Improves circulation and boosts immune function.
+11,11,Allergy,Meditation: Calms the mind and reduces allergy stress triggers.
+12,12,Allergy,Moderate Cycling: Enhances lung capacity and overall endurance.
+13,13,Allergy,Stretching Exercises: Relieves tension and increases flexibility.
+14,14,Allergy,Swimming: Improves lung function and provides controlled breathing.
+15,15,Allergy,Pilates: Strengthens core muscles and promotes better posture.
+16,16,Allergy,Tai Chi: A calming exercise that improves balance and relaxes the body
+17,17,Allergy,Breathing Exercises: Enhances lung function and eases allergy symptoms.
+18,18,Allergy,Walking: A low-impact activity that strengthens the cardiovascular system
+19,19,Allergy,Jogging 
+20,20,GERD,Walking 
+21,21,GERD,Gentle Yoga
+22,22,GERD,Reverse Crunches
+23,23,GERD,Modified Plank
+24,24,GERD,Rebounding (on a Mini Trampoline)
+25,25,GERD,Bird-Dog Exercise
+26,26,GERD,Leg Lifts 
+27,27,GERD,Side-Lying Oblique Crunches
+28,28,GERD,Breathing Exercises
+29,29,GERD,Cycling (Moderate)
+30,30,GRED,Pilates
+31,31,Chronic cholestasis,Low-Impact Step Aerobics
+32,32,Chronic cholestasis,Child's Pose (Yoga)
+33,33,Chronic cholestasis,Reclining Twist (Yoga)
+34,34,Chronic cholestasis,Brisk Walking
+35,35,Chronic cholestasis,Freestyle Stroke (Swimming)
+36,36,Chronic cholestasis,Stationary Cycling
+37,37,Chronic cholestasis,Diaphragmatic Breathing
+38,38,Chronic cholestasis,Walking
+39,39,Chronic cholestasis,Stretching
+40,40,Drug Reaction,Walking
+41,41,Drug Reaction,Swimming
+42,42,Drug Reaction,Jumping rope
+44,44,Drug Reaction,Hiking
+45,45,Drug Reaction,Running
+46,46,Drug Reaction,Diaphragmatic Breathing
+47,47,Drug Reaction,Brisk Walking
+48,48,Drug Reaction,Rowing
+49,49,Drug Reaction,Foam rolling
+50,50,Peptic ulcer disease,"Walking: Gentle, low-impact exercise
+51,51,Peptic ulcer disease,Yoga: Improves flexibility and reduces stress.
+52,52,Peptic ulcer disease,Stretching routines: Enhances flexibility and reduces tension.
+53,53,Peptic ulcer disease,Balance exercises: Improves physical stability
+54,54,Peptic ulcer disease,Dynamic stretches: Prepares the body for activity.
+55,55,Peptic ulcer disease,Foam rolling: Releases muscle tension
+56,56,Peptic ulcer disease,Swimming: Full-body workout without strain
+57,57,Peptic ulcer disease,Cycling
+58,58,Peptic ulcer disease,Resistance bands: Versatile tool for strength training.
+59,59,Peptic ulcer disease,Deadlifts: Enhances overall strength
+60,60,AIDS,Walking
+61,61,AIDS,Gentle Stretching
+62,62,AIDS,Deep Breathing
+63,63,AIDS,Low-Impact Aerobics
+64,64,AIDS,Stretching
+65,65,AIDS,Resistance Band Exercises
+66,66,AIDS,Swimming
+67,67,AIDS,jogging
+68,68,AIDS,yoga(Pranayama)
+69,69,AIDS,Cycling or leg Raises
+70,70,Diabetes,Walking
+71,71,Diabetes,Strength Training
+72,72,Diabetes,Swimming
+73,73,Diabetes,Tai Chi
+74,74,Diabetes,Yoga
+75,75,Diabetes,Pilates
+76,76,Diabetes,jogging
+77,77,Diabetes,leg Lifts
+78,78,Diabetes,Squats
+79,79,Diabetes,deep breathing Exercises
+80,80,Gastroenteritis,Gentle Stretching
+81,81,Gastroenteritis,Leg Lifts
+82,82,Gastroenteritis,Gentle Walking
+83,83,Gastroenteritis,Deep breathing
+84,84,Gastroenteritis,Ankle Rotations
+85,85,Gastroenteritis,shoulder Circles
+86,86,Gastroenteritis,Seated Leg Extensions
+87,87,Gastroenteritis,Pelvic Tilts
+88,88,Gastroenteritis,Side-Lying Stretches 
+89,89,Gastroenteritis,Jogging
+90,90,Bronchial Asthma,Walking
+91,91,Bronchial Asthma,Breathing Exercises
+92,92,Bronchial Asthma,Swimming
+93,93,Bronchial Asthma,Gentle Stretching
+94,94,Bronchial Asthma,Yoga
+95,95,Bronchial Asthma,Tai Chi
+96,96,Bronchial Asthma,Arm Raises
+97,97,Bronchial Asthma,Resistance bands Training
+98,98,Bronchial Asthma,Gentle jogging
+99,99,Bronchial Asthma,cycling
+100,100,Hypertension,Walking
+101,101,Hypertension,Cycling
+102,102,Hypertension,Swimming
+103,103,Hypertension,Yoga
+104,104,Hypertension,Tai Chi
+105,105,Hypertension,Strength Training
+106,106,Hypertension,StretchingInclude magnesium-rich foods
+107,107,Hypertension,Breathing Exercises
+108,108,Hypertension,Dancing
+109,109,Hypertension,Jogging
+110,110,Migraine,Walking
+111,111,Migraine,Yoga
+112,112,Migraine,Stretching
+113,113,Migraine,Breathing Exercises
+114,114,Migraine,Tai Chi
+115,115,Migraine,Neck Stretches
+116,116,Migraine,Pelvic Tilts
+117,117,Migraine,Seated Leg Extensions
+118,118,Migraine,Calf Raises
+119,119,Migraine,Gentle Shoulder Rolls
+120,120,Cervical spondylosis,Walking
+121,121,Cervical spondylosis,Yoga
+122,122,Cervical spondylosis,Stretching
+123,123,Cervical spondylosis,Breathing Exercises
+124,124,Cervical spondylosis,Tai Chi
+125,125,Cervical spondylosis,Neck Stretches
+126,126,Cervical spondylosis,Pelvic Tilts
+127,127,Cervical spondylosis,Seated Leg Extensions
+128,128,Cervical spondylosis,Calf Raises
+129,129,Cervical spondylosis,Gentle Shoulder Rolls
+130,130,Paralysis (brain hemorrhage),Breathing Exercises
+131,131,Paralysis (brain hemorrhage),Ankle Pumps
+132,132,Paralysis (brain hemorrhage),Leg Lifts
+133,133,Paralysis (brain hemorrhage),Toe Curls
+134,134,Paralysis (brain hemorrhage),Seated Marching
+135,135,Paralysis (brain hemorrhage),Hand Squeezes
+136,136,Paralysis (brain hemorrhage),Shoulder Shrugs
+137,137,Paralysis (brain hemorrhage),Passive Range of Motion
+138,138,Paralysis (brain hemorrhage),Side-Lying Leg Raises
+139,139,Paralysis (brain hemorrhage),Arm Circles
+140,140,Jaundice,Walking
+141,141,Jaundice,Gentle Stretching
+142,142,Jaundice,Breathing Exercises
+143,143,Jaundice,Leg Elevation
+144,144,Jaundice,Shoulder Shrugs
+145,145,Jaundice,Ankle Circles
+146,146,Jaundice,Chair Yoga
+147,147,Jaundice,Seated Marching
+148,148,Jaundice,Side Bends
+149,149,Jaundice,Arm Circles
+150,150,Malaria,Walking
+151,151,Malaria,Gentle Stretching
+152,152,Malaria,Breathing Exercises
+153,153,Malaria,Leg Elevation
+154,154,Malaria,Shoulder Rolls
+155,155,Malaria,Ankle Pumps
+156,156,Malaria,Seated Marching
+157,157,Malaria,Arm Circles
+158,158,Malaria,Side Bends
+159,159,Malaria,Tai Chi
+160,160,Chicken pox,Walking
+161,161,Chicken pox,Gentle Stretching
+162,162,Chicken pox,Breathing Exercises
+163,163,Chicken pox,Arm Circles
+164,164,Chicken pox,Shoulder Shrugs
+165,165,Chicken pox,Neck Rolls
+166,166,Chicken pox,Ankle Circles
+167,167,Chicken pox,Seated Leg Lifts
+168,168,Chicken pox,Side Bends
+169,169,Chicken pox,Tai Chi
+170,170,Dengue,Walking
+171,171,Dengue,Gentle Stretching
+172,172,Dengue,Breathing Exercises
+173,173,Dengue,Shoulder Rolls
+174,174,Dengue,Neck Stretches
+175,175,Dengue,Ankle Circles
+176,176,Dengue,Seated Leg Lifts
+177,177,Dengue,Leg Elevation
+178,178,Dengue,Arm Circles
+179,179,Dengue,Tai Chi
+180,180,Typhoid,Walking
+181,181,Typhoid,Gentle Stretching
+182,182,Typhoid,Breathing Exercises
+183,183,Typhoid,Shoulder Shrugs
+184,184,Typhoid,Neck Rolls
+185,185,Typhoid,Ankle Pumps
+186,186,Typhoid,Seated Leg Lifts
+187,187,Typhoid,Seated Marching
+188,188,Typhoid,Side Bends
+189,189,Typhoid,Tai Chi
+190,190,hepatitis A,Walking
+191,191,hepatitis A,Gentle Stretching
+192,192,hepatitis A,Breathing Exercises
+193,193,hepatitis A,Ankle Circles
+194,194,hepatitis A,Shoulder Rolls
+195,195,hepatitis A,Seated Leg Extensions
+196,196,hepatitis A,Side Bends
+197,197,hepatitis A,Arm Circles
+198,198,hepatitis A,Leg Elevation
+199,199,hepatitis A,Tai Chi
+200,200,Hepatitis B,Walking
+201,201,Hepatitis B,Gentle Stretching
+202,202,Hepatitis B,Breathing Exercises
+203,203,Hepatitis B,Ankle Circles
+204,204,Hepatitis B,Shoulder Rolls
+205,205,Hepatitis B,Seated Leg Extensions
+206,206,Hepatitis B,Side Bends
+207,207,Hepatitis B,Arm Circles
+208,208,Hepatitis B,Leg Elevation
+209,209,Hepatitis B,Tai Chi
+210,210,Hepatitis C,Walking
+211,211,Hepatitis C,Gentle Stretching
+212,212,Hepatitis C,Breathing Exercises
+213,213,Hepatitis C,Ankle Circles
+214,214,Hepatitis C,Shoulder Rolls
+215,215,Hepatitis C,Seated Leg Extensions
+216,216,Hepatitis C,Side Bends
+217,217,Hepatitis C,Arm Circles
+218,218,Hepatitis C,Leg Elevation
+219,219,Hepatitis C,Tai Chi
+220,220,Hepatitis D,Walking
+221,221,Hepatitis D,Gentle Stretching
+222,222,Hepatitis D,Breathing Exercises
+223,223,Hepatitis D,Ankle Circles
+224,224,Hepatitis D,Shoulder Shrugs
+225,225,Hepatitis D,Seated Leg Lifts
+226,226,Hepatitis D,Neck Stretches
+227,227,Hepatitis D,Arm Circles
+228,228,Hepatitis D,Tai Chi
+229,229,Hepatitis D,Side Bends
+230,230,Hepatitis E,Walking
+231,231,Hepatitis E,Gentle Stretching
+232,232,Hepatitis E,Breathing Exercises
+233,233,Hepatitis E,Ankle Circles
+234,234,Hepatitis E,Shoulder Rolls
+235,235,Hepatitis E,Seated Leg Extensions
+236,236,Hepatitis E,Side Bends
+237,237,Hepatitis E,Arm Circles
+238,238,Hepatitis E,Leg Elevation
+239,239,Hepatitis E,Tai Chi
+240,240,Alcoholic hepatitis,Walking
+241,241,Alcoholic hepatitis,Gentle Stretching
+242,242,Alcoholic hepatitis,Breathing Exercises
+243,243,Alcoholic hepatitis,Ankle Circles
+244,244,Alcoholic hepatitis,Shoulder Rolls
+245,245,Alcoholic hepatitis,Seated Marching
+246,246,Alcoholic hepatitis,Leg Elevation
+247,247,Alcoholic hepatitis,Arm Circles
+248,248,Alcoholic hepatitis,Tai Chi
+249,249,Alcoholic hepatitis,Neck Stretches
+250,250,Tuberculosis,Deep Breathing
+251,251,Tuberculosis,Pursed Lip Breathing 
+252,252,Tuberculosis,Walking
+253,253,Tuberculosis,Gentle Stretching
+254,254,Tuberculosis,Chest Expansion
+255,255,Tuberculosis,Seated Marching
+256,256,Tuberculosis,Shoulder Rolls
+257,257,Tuberculosis,Arm Raises
+258,258,Tuberculosis,Ankle Circles 
+259,259,Tuberculosis,Heel-to-Toe Walking
+260,260,Common Cold,Walking
+261,261,Common Cold,Neck Stretching
+262,262,Common Cold,Deep Breathing
+263,263,Common Cold,Shoulder Shrugs
+264,264,Common Cold,Gentle Yoga
+265,265,Common Cold,Toe Tapping
+266,266,Common Cold,Seated Leg Extensions
+267,267,Common Cold,Arm Circles
+268,268,Common Cold,Ankle Rolls
+269,269,Common Cold,Pursed Lip Breathing
+270,270,Pneumonia,Deep Breathing Exercises
+271,271,Pneumonia,Pursed Lip Breathing
+272,272,Pneumonia,walking
+273,273,Pneumonia,Seated Marching
+274,274,Pneumonia,Heel-to-Toe Walking
+275,275,Pneumonia,Diaphragmatic Breathing
+276,276,Pneumonia,Swimming
+277,277,Pneumonia,Meditation
+278,278,Pneumonia,walking or Stretching
+279,279,Pneumonia,Follow medical recommendations
+280,280,Dimorphic hemmorhoids(piles),Walking
+281,281,Dimorphic hemmorhoids(piles),Kegel Exercises
+282,282,Dimorphic hemmorhoids(piles),Squats
+283,283,Dimorphic hemmorhoids(piles),Leg Raises
+284,284,Dimorphic hemmorhoids(piles),Ankle Rotations
+285,285,Dimorphic hemmorhoids(piles),Seated Marching
+286,286,Dimorphic hemmorhoids(piles),Hip Thrusts
+287,287,Dimorphic hemmorhoids(piles),Pelvic Tilts
+288,288,Dimorphic hemmorhoids(piles),Side Leg Raises
+289,289,Dimorphic hemmorhoids(piles),Meditation
+290,290,Heart attack,Walking.
+291,291,Heart attack,Stationary Biking
+292,292,Heart attack,Treadmill Walking
+293,293,Heart attack,Ankle Circles
+294,294,Heart attack,Toe Tapping
+295,295,Heart attack,Leg Extensions
+296,296,Heart attack,Seated Marching
+297,297,Heart attack,Bicep Curls (Light Weights)
+298,298,Heart attack,Hamstring Stretch
+299,299,Heart attack,Engage in regular exercise
+300,300,Varicose veins,Walking
+301,301,Varicose veins,Leg Elevation
+302,302,Varicose veins,Calf Raises
+303,303,Varicose veins,Ankle Circles
+304,304,Varicose veins,Squats
+305,305,Varicose veins,Seated Leg Extensions
+306,306,Varicose veins,Hamstring Stretches
+307,307,Varicose veins,Bicycle Legs
+308,308,Varicose veins,Heel-to-Toe Walking
+309,309,Varicose veins,Lunges
+310,310,Hypothyroidism,walking
+311,311,Hypothyroidism,Running
+312,312,Hypothyroidism,Stretching
+313,313,Hypothyroidism,Swimming
+314,314,Hypothyroidism,Meditation
+315,315,Hypothyroidism,Resistance bands training
+316,316,Hypothyroidism,Pilates
+318,318,Hypothyroidism,Maintain a stable weight
+319,319,Hypothyroidism,Engage in regular exercise
+320,320,Hyperthyroidism,Elliptical Training: Low-impact cardiovascular workout to avoid joint strain while improving fitness.
+321,321,Hyperthyroidism,Swimming
+322,322,Hyperthyroidism,yoga
+323,323,Hyperthyroidism,Running
+324,324,Hyperthyroidism,walking
+325,325,Hyperthyroidism,Resistance Band Exercises(shoulder circles)
+326,326,Hyperthyroidism,Stretching
+327,327,Hyperthyroidism,Pilates
+328,328,Hyperthyroidism,Walking Lunges: Gentle walking lunges to build lower body strength and flexibility.
+329,329,Hyperthyroidism,Engage in regular exercise
+330,330,Hypoglycemia,Walking: Light, steady pace to maintain blood sugar levels.
+331,331,Hypoglycemia,Low-Impact Aerobics.
+332,332,Hypoglycemia,Cycling: Moderate cycling to improve overall circulation.
+333,333,Hypoglycemia,Strength Training
+334,334,Hypoglycemia,Stretching
+335,335,Hypoglycemia,Running
+336,336,Hypoglycemia,walking
+337,337,Hypoglycemia,Meditation
+338,338,Hypoglycemia,Step-ups
+339,339,Hypoglycemia,Tai Chi
+340,340,Osteoarthristis,Range of Motion (ROM) Exercises: Gentle joint movements.
+341,341,Osteoarthristis,Walking: Low-impact cardio.
+342,342,Osteoarthristis,Leg Extensions: Lift legs to strengthen knee muscles.
+343,343,Osteoarthristis,Wall Squats: Squat gently while against the wall.
+344,344,Osteoarthristis,Calf Raises: Stand on toes and lower heels.
+345,345,Osteoarthristis,Hamstring Stretch: Stretch one leg at a time.
+346,346,Osteoarthristis,Hip Flexor Stretch: Lunge and stretch hip flexors.
+347,347,Osteoarthristis,Bridge Pose: Lift hips to strengthen glutes.
+348,348,Osteoarthristis,Tai Chi or Yoga: Low-impact exercises for balance and flexibility.
+349,349,Osteoarthristis,Maintain a healthy weight
+350,350,Arthritis,Leg Extensions
+351,351,Arthritis,Range of Motion Exercises(shoulder circles)
+352,352,Arthritis,Walking
+353,353,Arthritis,Hamstring Stretch
+354,354,Arthritis,Calf Raises
+355,355,Arthritis,Water Aerobics
+356,356,Arthritis,Squats
+357,357,Arthritis,Ankle Circles
+358,358,Arthritis,Side-Lying Leg Raises
+359,359,Arthritis,Upper Body Rotation
+360,360,(vertigo) Paroymsal  Positional Vertigo,"Epley Maneuver"
+361,361,(vertigo) Paroymsal  Positional Vertigo,Brandt-Daroff Exercises
+362,362,(vertigo) Paroymsal  Positional Vertigo,Head-tilt Exercise
+363,363,(vertigo) Paroymsal  Positional Vertigo,Tai Chi or Yoga
+364,364,(vertigo) Paroymsal  Positional Vertigo,Posture Correction
+365,365,(vertigo) Paroymsal  Positional Vertigo,Balance Training
+366,366,(vertigo) Paroymsal  Positional Vertigo,Cawthorne-Cooksey Exercises
+367,367,(vertigo) Paroymsal  Positional Vertigo,Semont Maneuver
+368,368,(vertigo) Paroymsal  Positional Vertigo,Walking
+369,369,(vertigo) Paroymsal  Positional Vertigo,Swimming
+370,370,Acne,Push-ups
+371,371,Acne,Squats
+373,373,Acne,Yoga (Downward Dog)
+374,374,Acne,Leg Raises
+375,375,Acne,Burpees
+376,376,Acne,Cycling
+377,377,Acne,Swimming
+378,378,Acne,Hip Thrusts
+379,379,Acne,Reverse Crunches
+380,380,Urinary tract infection,Kegel Exercises
+381,381,Urinary tract infection,Deep Breathing
+382,382,Urinary tract infection,Walking
+383,383,Urinary tract infection,Hip Flexor Stretch
+384,384,Urinary tract infection,Bridge Pose
+385,385,Urinary tract infection,Pelvic Tilts
+386,386,Urinary tract infection,Squats
+387,387,Urinary tract infection,Running
+388,388,Urinary tract infection,Stretching
+389,389,Urinary tract infection,Meditation
+390,390,Psoriasis,Walking
+391,391,Psoriasis,Child's Pose (Balasana)
+392,392,Psoriasis,Gentle Yoga
+393,393,Psoriasis,Stretching
+394,394,Psoriasis,Swimming
+395,395,Psoriasis,Pilates
+396,396,Psoriasis,Cycling
+397,397,Psoriasis,Resistance Band Training
+398,398,Psoriasis,Breathing Exercises (Pranayama)
+399,399,Psoriasis,Bodyweight Exercises (Push-ups, Squats, Lunges)
+400,400,Impetigo,Jump Squats
+401,401,Impetigo,Tricep Dips
+402,402,Impetigo,Leg Raises
+403,403,Impetigo,Bicycle Crunches
+404,404,Impetigo,Deadlifts
+405,405,Impetigo,Push-ups
+406,406,Impetigo,Lunges
+407,407,Impetigo,Planks
+408,408,Impetigo,Bicep Curls
+409,409,Impetigo,Squats

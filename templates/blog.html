@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & AI Blog - Virtual Doctor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?health,technology') no-repeat center center/cover;
+            background: linear-gradient(135deg, #000000, #38ddec);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .blog-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .blog-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background: linear-gradient(135deg, #000000, #38ddec)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Virtual Doctor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/homepage">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/developer">Developer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="hero">
+        <div class="container" style="color: white;">
+            <h1>Welcome to the Virtual Doctor Blog</h1>
+            <p>Stay updated with the latest in healthcare, AI, and medical advancements.</p>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search blog articles..." aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="mb-4 text-center">Latest Blog Posts</h2>
+        <div class="row">
+            <!-- Article Preview 1 -->
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="static/revol.jfif" class="card-img-top" alt="AI in Healthcare">
+                    <div class="card-body">
+                        <h5 class="card-title">How AI is Revolutionizing Healthcare</h5>
+                        <p class="card-text">Discover how artificial intelligence is transforming diagnosis and treatment.</p>
+                        <!-- Link to External Article -->
+                        <a href="https://bmcmededuc.biomedcentral.com/articles/10.1186/s12909-023-04698-z" target="_blank" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Preview 2 -->
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="static/aivsdoc.jpg" class="card-img-top" alt="Doctor and AI">
+                    <div class="card-body">
+                        <h5 class="card-title">AI vs Human Doctors: Who Wins?</h5>
+                        <p class="card-text">Can AI answer medical questions better than doctors? Learn the benefits and limitations of AI in medicine.</p>
+                        <!-- Link to External Article -->
+                        <a href="https://www.health.harvard.edu/blog/can-ai-answer-medical-questions-better-than-your-doctor-202403273028" target="_blank" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Preview 3 -->
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="static/10foods.jpg" class="card-img-top" alt="Healthy Eating">
+                    <div class="card-body">
+                        <h5 class="card-title">Top 10 Foods for a Healthy Life</h5>
+                        <p class="card-text">Eating right can prevent diseases! Discover the best foods for your health.</p>
+                        <!-- Link to External Article -->
+                        <a href="https://www.ucsfhealth.org/education/top-ten-foods-for-health" target="_blank" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Article Preview 4 -->
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="static/boost.jpg" class="card-img-top" alt="Exercise">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Workouts for a Stronger Immune System</h5>
+                        <p class="card-text">Regular exercise keeps you healthy. Find the best workouts for immunity.</p>
+                        <!-- Link to External Article -->
+                        <a href="https://immusehealth.com/news/post/how-boost-your-immune-system-exercise#:~:text=As%20mentioned%20above%2C%20examples%20of,and%20working%20with%20resistance%20bands." target="_blank" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Preview 5 -->
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="static/med.jfif" class="card-img-top" alt="Medications">
+                    <div class="card-body">
+                        <h5 class="card-title">Understanding Common Medications</h5>
+                        <p class="card-text">Learn about commonly used medicines and their effects on health.</p>
+                        <!-- Link to External Article -->
+                        <a href="https://www.webmd.com/drugs/2/index" target="_blank" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Preview 6 -->
+            <div class="col-md-4">
+                <div class="card blog-card">
+                    <img src="static/mental.jpg" class="card-img-top" alt="Mental Health">
+                    <div class="card-body">
+                        <h5 class="card-title">The Importance of Mental Health</h5>
+                        <p class="card-text">Mental health is as important as physical health. Learn how to take care of it.</p>
+                        <!-- Link to External Article -->
+                        <a href="https://www.verywellmind.com/the-importance-of-mental-health-for-wellbeing-5207938" target="_blank" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

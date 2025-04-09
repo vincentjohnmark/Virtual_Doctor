@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency Help</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- OpenStreetMap (Leaflet.js) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <style>
+        /* Ensure the entire page can accommodate the map */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center; margin: 0;">🏥 Nearby Hospitals</h2>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            navigator.geolocation.getCurrentPosition(position => {
+                let lat = position.coords.latitude;
+                let lon = position.coords.longitude;
+
+                let map = L.map('map').setView([lat, lon], 13);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; OpenStreetMap contributors'
+                }).addTo(map);
+
+                // User location marker
+                L.marker([lat, lon]).addTo(map)
+                    .bindPopup('📍 You are here')
+                    .openPopup();
+
+                // Hospital icon for markers
+                let hospitalIcon = L.icon({
+                    iconUrl: 'https://cdn-icons-png.flaticon.com/512/3177/3177361.png',
+                    iconSize: [30, 30],
+                    iconAnchor: [15, 30],
+                    popupAnchor: [0, -30]
+                });
+
+                // Overpass API query for hospitals
+                let query = `
+                [out:json];
+                (
+                  node["amenity"="hospital"](around:5000,${lat},${lon});
+                  way["amenity"="hospital"](around:5000,${lat},${lon});
+                  relation["amenity"="hospital"](around:5000,${lat},${lon});
+                );
+                out center;
+                `;
+
+                let overpassUrl = "https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(query);
+
+                fetch(overpassUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log("🏥 Hospitals Data:", data);
+                        data.elements.forEach(hospital => {
+                            let hospitalLat = hospital.lat;
+                            let hospitalLon = hospital.lon;
+                            let hospitalName = hospital.tags?.name || "Unknown Hospital";
+
+                            // Calculate distance between user & hospital
+                            let distance = getDistance(lat, lon, hospitalLat, hospitalLon);
+
+                            // Add hospital marker with custom icon & distance
+                            L.marker([hospitalLat, hospitalLon], { icon: hospitalIcon }).addTo(map)
+                                .bindPopup(`🏥 <b>${hospitalName}</b><br>📏 ${distance.toFixed(2)} km away`);
+                        });
+                    })
+                    .catch(error => console.error("⚠️ Error fetching hospital data:", error));
+            }, 
+            error => {
+                console.log("⚠️ Location access denied. Using default location.");
+                let defaultLat = 28.6139, defaultLon = 77.2090; // Default: New Delhi
+                let map = L.map('map').setView([defaultLat, defaultLon], 13);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; OpenStreetMap contributors'
+                }).addTo(map);
+            });
+        }
+
+        // Function to calculate distance between two coordinates (Haversine Formula)
+        function getDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371; // Radius of the Earth in km
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            return R * c; // Distance in km
+        }
+
+        // Load the map when the page loads
+        window.onload = initMap;
+    </script>
+</body>
+</html>
