@@ -1,6 +1,6 @@
 # 🩺 Virtual Doctor – AI-Powered Health Assistant
 
-**Virtual Doctor** is a smart web-based application that acts like a personal health assistant. It allows users to input symptoms and, based on machine learning models, provides predicted diseases along with helpful information such as causes, precautions, medications, recommended diets, and lifestyle suggestions. It also features chatbot interaction and tools for tracking health goals.
+**Virtual Doctor** is a smart web-based application that acts like a personal health assistant. It allows users to input symptoms and, based on machine learning models, provides predicted diseases along with helpful information such as causes, precautions, medications, recommended diets, and lifestyle suggestions. It also features Hospital Locator to locate the nearby hospitals in case of emergency by using Google Maps API.
 
 ---
 
@@ -10,7 +10,6 @@
 - 💊 **Suggested Medications, Causes, and Precautions**
 - 🥗 **Food and Lifestyle Recommendations**
 - 📍 **Nearby Hospital Locator** using Google Maps API
-- 💬 **Interactive Chatbot** to track user symptoms and daily routines
 - 📈 **BMI Calculator** and personalized fitness goal setup
 
 ---
@@ -35,7 +34,7 @@ virtual-doctor/
 ├── static/         # CSS and JS files
 ├── templates/      # HTML templates
 ├── models/         # Trained ML models and datasets
-├── app.py          # Flask application
+├── main.py          # Flask application
 ├── requirements.txt# Python dependencies
 ├── README.md       # Project documentation
 └── ...
@@ -64,7 +63,7 @@ virtual-doctor/
 
 4. **Run the application**
    ```bash
-   python app.py
+   python main.py
    ```
 
 5. Open your browser and go to `http://127.0.0.1:5000` to use the app.
