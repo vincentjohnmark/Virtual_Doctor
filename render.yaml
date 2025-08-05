@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: virtual-doctor
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+    autoDeploy: true
