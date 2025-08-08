@@ -1,3 +1,5 @@
+import os
+import sys
 from flask import Flask, request, render_template
 import numpy as np
 import pandas as pd
@@ -6,19 +8,36 @@ import random
 app = Flask(__name__)
 
 # -------------------------------------------
-# Load necessary datasets
+# Load necessary datasets with robust, absolute paths
 # -------------------------------------------
+# Get the absolute path to the directory where this script is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Define file paths
+symptoms_path = os.path.join(BASE_DIR, "dataset", "symtoms_df.csv")
+precautions_path = os.path.join(BASE_DIR, "dataset", "precautions_df.csv")
+workout_path = os.path.join(BASE_DIR, "dataset", "workout_dff.csv")
+description_path = os.path.join(BASE_DIR, "dataset", "description.csv")
+medications_path = os.path.join(BASE_DIR, "dataset", "medicationss.csv")
+diets_path = os.path.join(BASE_DIR, "dataset", "dietss.csv")
+severity_path = os.path.join(BASE_DIR, "dataset", "symptom-severity.csv")
+
 try:
-    sym_des = pd.read_csv("dataset/symtoms_df.csv")
-    precautions = pd.read_csv("dataset/precautions_df.csv")
-    workout = pd.read_csv("dataset/workout_dff.csv", on_bad_lines='skip')
-    description = pd.read_csv("dataset/description.csv")
-    medications = pd.read_csv("dataset/medicationss.csv")
-    diets = pd.read_csv("dataset/dietss.csv")
-    symptom_severity = pd.read_csv("dataset/symptom-severity.csv")
+    sym_des = pd.read_csv(symptoms_path)
+    precautions = pd.read_csv(precautions_path)
+    workout = pd.read_csv(workout_path, on_bad_lines='skip')
+    description = pd.read_csv(description_path)
+    medications = pd.read_csv(medications_path)
+    diets = pd.read_csv(diets_path)
+    symptom_severity = pd.read_csv(severity_path)
     print("Datasets loaded successfully!")
+except FileNotFoundError as e:
+    # If a core data file is missing, the app cannot run.
+    print(f"FATAL ERROR: A data file was not found. {e}")
+    sys.exit(1) # Exit the application immediately
 except Exception as e:
-    print("Error loading datasets:", e)
+    print(f"Error loading datasets: {e}")
+    sys.exit(1) # Exit the application immediately
 
 # -------------------------------------------
 # Build a set of disease names from symtoms_df.csv
@@ -88,8 +107,8 @@ def get_predicted_value(patient_symptoms):
         for symptom in patient_symptoms:
             if symptom in symptoms_set:
                 score += severity_dict.get(symptom, 1)
-        # Add a small random noise to break ties
-        score += random.uniform(0, 0.5)
+        # REMOVED: Random noise to break ties. max() will handle ties deterministically.
+        # score += random.uniform(0, 0.5) 
         disease_scores[disease] = score
     print("Disease scores:", disease_scores)
     if disease_scores:
@@ -113,7 +132,6 @@ def helper(dis):
     prec_df = precautions[precautions['Disease'] == dis]
     if not prec_df.empty:
         prec_list = [str(x) for x in prec_df.iloc[0] if pd.notna(x)]
-        # Instead of joining into a string, return the list as a whole.
         prec = prec_list
     else:
         prec = ["No precautions available."]
@@ -182,7 +200,6 @@ def blog():
 
 @app.route("/index")
 def index():
-    # Pass the reduced display_symptoms dictionary so the front-end isn't overwhelmed.
     return render_template("index2.html", symptoms_dict=display_symptoms)
 
 @app.route("/emergency")
@@ -195,17 +212,19 @@ def predict():
         symptoms_text = request.form.get('symptoms')
         print("Received Symptoms Text:", symptoms_text)
         
+        # Check if the input is empty
         if not symptoms_text:
             message = "Please enter at least one symptom."
             return render_template('index2.html', message=message, symptoms_dict=display_symptoms)
         
         # Normalize input: convert to lower-case and strip whitespace
-        selected_symptoms = [s.strip().lower() for s in symptoms_text.split(',') if s.strip() != '']
+        selected_symptoms = [s.strip().lower() for s in symptoms_text.split(',') if s.strip()]
         print("Selected Symptoms:", selected_symptoms)
         
-        # If no valid symptoms found, choose a default set
+        # Check if any valid symptoms were extracted after cleaning
         if not selected_symptoms:
-            selected_symptoms = list(symptoms_dict.keys())[:3]
+            message = "Please enter valid symptoms."
+            return render_template('index2.html', message=message, symptoms_dict=display_symptoms)
         
         predicted_disease = get_predicted_value(selected_symptoms)
         dis_des, prec, meds, diet, work = helper(predicted_disease)
